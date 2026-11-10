@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recebemos seu contato | UNA</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/img/logo-una.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<!-- ============ GOOGLE ADS: tag global + CONVERSÃO ============
+     Esta é a página de conversão. Cole a tag global e o evento de conversão aqui.
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXX');
+  gtag('config', 'G-XXXXXXXXXX'); // GA4
+  gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXX/ROTULO_DA_CONVERSAO' });
+</script>
+============================================================== -->
+
+<!-- ============ META PIXEL: PageView + Lead ============
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'XXXXXXXXXXXXXXX');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+</script>
+======================================================= -->
+
+<style>
+  .thanks { min-height: 100vh; min-height: 100svh; display: grid; place-items: center; background: var(--sand); padding: 40px 0; text-align: center; }
+  .thanks img { height: 64px; width: auto; margin: 0 auto 36px; }
+  .thanks h1 { font-size: clamp(24px, 6vw, 38px); margin-bottom: 18px; }
+  .thanks p { max-width: 30em; margin: 0 auto 32px; font-size: 17px; }
+  .thanks .back { display: block; margin-top: 24px; font-size: 14px; color: var(--brown); }
+</style>
+</head>
+<body>
+<main class="thanks">
+  <div class="wrap">
+    <img src="assets/img/logo-una.png" alt="UNA" width="76" height="64">
+    <h1>Recebemos seu contato.</h1>
+    <p>Sua mensagem foi aberta no WhatsApp. É só tocar em enviar, e respondemos para agendar sua call.</p>
+    <a class="btn btn-dark" id="wa" href="https://wa.me/5581984808074" target="_blank" rel="noopener">Abrir WhatsApp novamente</a>
+    <a class="back" href="index.html">Voltar para a página inicial</a>
+  </div>
+</main>
+<script>
+  try { var u = sessionStorage.getItem('una_wa'); if (u) document.getElementById('wa').href = u; } catch (e) {}
+</script>
+</body>
+</html>

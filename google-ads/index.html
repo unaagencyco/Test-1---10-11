@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Ads para Médicos e Clínicas | UNA</title>
+<meta name="description" content="Anúncios no Google para quem já pesquisa sua especialidade na sua cidade, direto para o seu WhatsApp. Campanhas dentro das regras do CFM.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seu paciente está procurando agora. Quem aparece é o seu concorrente.">
+<meta property="og:description" content="Google Ads para médicos e clínicas, direto para o seu WhatsApp.">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap">
+
+<script>
+  /* ===================== CONFIGURAÇÃO =====================
+     Preencha antes de publicar. Campos vazios são ignorados. */
+  window.LP_CONFIG = {
+    whatsappNumber: "5581984808074",      // DDI + DDD + número, só dígitos
+    gtmId: "",                             // ex.: "GTM-XXXXXXX"
+    googleAdsId: "",                       // ex.: "AW-123456789"
+    googleAdsConversionLabel: ""           // ex.: "AbCdEfGhIjK"
+  };
+</script>
+
+<script>
+  // Carrega GTM / gtag apenas se configurados (não bloqueia a renderização)
+  (function (c) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    if (c.gtmId) {
+      dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      var s = document.createElement('script');
+      s.async = true; s.src = 'https://www.googletagmanager.com/gtm.js?id=' + c.gtmId;
+      document.head.appendChild(s);
+    }
+    if (c.googleAdsId) {
+      var g = document.createElement('script');
+      g.async = true; g.src = 'https://www.googletagmanager.com/gtag/js?id=' + c.googleAdsId;
+      document.head.appendChild(g);
+      gtag('js', new Date());
+      gtag('config', c.googleAdsId);
+    }
+  })(window.LP_CONFIG);
+</script>
+
+<style>
+  :root {
+    --black: #000;
+    --white: #fff;
+    --sand: #f3f1ed;
+    --ink: #111;
+    --muted: #4a4a4a;
+    --muted-dark: #b9b9b9;
+    --line: #d9d6d0;
+    --line-dark: #3a3a3a;
+    --head: 'Montserrat', system-ui, sans-serif;
+    --body: 'Open Sans', system-ui, sans-serif;
+    --wrap: 1120px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--body); color: var(--ink); background: var(--white); line-height: 1.6; font-size: 16px; }
+  img, svg { display: block; }
+  a { color: inherit; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 { font-family: var(--head); font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: 1.12; margin: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Top bar */
+  .topbar { background: var(--black); color: var(--white); }
+  .topbar .wrap { display: flex; justify-content: space-between; align-items: center; min-height: 52px; }
+  .logo { font-family: var(--head); font-weight: 800; font-size: 18px; letter-spacing: .2em; text-decoration: none; }
+  .tag { font-family: var(--head); font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--head); font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer; padding: 18px 28px; transition: transform .15s, opacity .15s; }
+  .btn:hover { opacity: .88; }
+  .btn:active { transform: translateY(1px); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-dark { background: var(--black); color: var(--white); }
+  .btn-light { background: var(--white); color: var(--black); }
+
+  /* Hero */
+  .hero { background: var(--sand); padding: 64px 0 72px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+  .hero h1 { font-size: clamp(32px, 4.6vw, 52px); }
+  .lead { font-size: 18px; color: var(--muted); max-width: 30em; margin: 22px 0 24px; }
+  .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .checks li { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; }
+  .checks svg { width: 18px; height: 18px; margin-top: 3px; flex: none; }
+
+  /* Form */
+  .card { background: var(--white); border: 1px solid var(--line); box-shadow: 0 12px 40px rgba(0,0,0,.08); padding: 30px 28px; scroll-margin-top: 24px; }
+  .card h2 { font-size: 16px; letter-spacing: .04em; }
+  .card .sub { font-size: 13px; color: var(--muted); margin: 6px 0 20px; }
+  .field { margin-bottom: 16px; }
+  .field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .field input { width: 100%; font: inherit; font-size: 16px; padding: 14px; border: 1px solid #bdbab4; border-radius: 0; background: var(--white); color: var(--ink); }
+  .field input::placeholder { color: #9a978f; }
+  .field input:focus { outline: 2px solid var(--black); outline-offset: -1px; border-color: var(--black); }
+  .field input[aria-invalid="true"] { border-color: #b3261e; }
+  .err { display: none; color: #b3261e; font-size: 12.5px; margin-top: 4px; }
+  .field input[aria-invalid="true"] + .err { display: block; }
+  .card .btn { width: 100%; margin-top: 6px; }
+  .privacy { font-size: 12px; color: var(--muted); text-align: center; margin: 14px 0 0; }
+
+  /* Pain */
+  .pain { background: var(--black); color: var(--white); padding: 80px 0; }
+  .pain h2 { font-size: clamp(26px, 3vw, 34px); margin-bottom: 40px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .pain .item { border-top: 1px solid var(--line-dark); padding-top: 18px; }
+  .pain h3, .svc h3 { font-family: var(--body); text-transform: none; font-weight: 600; font-size: 17px; letter-spacing: 0; margin-bottom: 6px; }
+  .pain p { margin: 0; color: var(--muted-dark); font-size: 15px; }
+
+  /* Services */
+  .svc { padding: 88px 0; }
+  .svc h2 { font-size: clamp(26px, 3vw, 34px); }
+  .svc .intro { color: var(--muted); font-size: 17px; max-width: 30em; margin: 16px 0 44px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .svc .item { padding: 6px 24px 10px; border-left: 1px solid var(--line); }
+  .svc .item:first-child { border-left: 0; padding-left: 0; }
+  .svc p { margin: 0; color: var(--muted); font-size: 15px; }
+  .svc .cta-row { margin-top: 48px; }
+
+  /* FAQ */
+  .faq { background: var(--sand); padding: 80px 0; }
+  .faq .wrap { max-width: 760px; }
+  .faq h2 { font-size: clamp(24px, 2.8vw, 32px); margin-bottom: 28px; }
+  details { border-top: 1px solid #bdbab4; }
+  details:last-of-type { border-bottom: 1px solid #bdbab4; }
+  summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-weight: 600; font-size: 17px; }
+  summary::-webkit-details-marker { display: none; }
+  summary .ic { font-size: 24px; font-weight: 400; line-height: 1; transition: transform .2s; }
+  details[open] summary .ic { transform: rotate(45deg); }
+  details p { margin: 0 0 22px; color: var(--muted); max-width: 40em; }
+
+  /* Final CTA */
+  .final { background: var(--black); color: var(--white); padding: 88px 0; text-align: center; }
+  .final h2 { font-size: clamp(26px, 3.4vw, 40px); max-width: 18em; margin: 0 auto 32px; }
+
+  footer { background: var(--black); color: var(--muted-dark); border-top: 1px solid #222; font-size: 13px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 22px; padding-bottom: 22px; }
+  footer a { color: var(--muted-dark); }
+  footer a:hover { color: var(--white); }
+
+  /* Sticky mobile CTA */
+  .sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(0,0,0,.94); transform: translateY(110%); transition: transform .25s; display: none; }
+  .sticky.show { transform: none; }
+  .sticky .btn { width: 100%; }
+
+  @media (max-width: 960px) {
+    .hero .wrap { grid-template-columns: 1fr; gap: 36px; }
+    .grid4 { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
+    .svc .item:nth-child(3) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 700px) {
+    .wrap { padding: 0 20px; }
+    .tag { display: none; }
+    .hero { padding: 40px 0 48px; }
+    .lead { font-size: 16.5px; }
+    .card { padding: 24px 20px; }
+    .grid3, .grid4 { grid-template-columns: 1fr; gap: 24px; }
+    .svc .item { border-left: 0; padding: 0 0 20px; border-bottom: 1px solid var(--line); }
+    .svc .item:last-child { border-bottom: 0; }
+    .pain, .svc, .faq, .final { padding: 60px 0; }
+    .sticky { display: block; }
+    body { padding-bottom: 76px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Quanto preciso investir?", "acceptedAnswer": {"@type": "Answer", "text": "Depende da especialidade e da cidade. A verba vai direto ao Google, separada da gestão, e indicamos o valor na proposta."}},
+    {"@type": "Question", "name": "Preciso ter site?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Criamos a página de destino dos anúncios."}},
+    {"@type": "Question", "name": "Vocês garantem pacientes?", "acceptedAnswer": {"@type": "Answer", "text": "Não, e desconfie de quem garante. Trabalhamos com estratégia, métricas transparentes e ajustes constantes."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6l-4.5.9z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6.5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="UNA">UNA</a>
+    <span class="tag">Google Ads para médicos e clínicas</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Seu paciente está procurando agora. Quem aparece é o seu concorrente.</h1>
+        <p class="lead">Anúncios no Google para quem já pesquisa sua especialidade na sua cidade, direto para o seu WhatsApp.</p>
+        <ul class="checks">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Pacientes com intenção de agendar, não curtidas</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Anúncios dentro das regras do CFM</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Você sabe quanto custa cada novo contato</li>
+        </ul>
+      </div>
+
+      <form class="card" id="lead-form" novalidate>
+        <h2>Quero anunciar no Google</h2>
+        <p class="sub">Leva 20 segundos. Respondemos pelo WhatsApp.</p>
+
+        <div class="field">
+          <label for="f-nome">Nome</label>
+          <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Dr(a). Nome Sobrenome" required minlength="3" aria-describedby="e-nome">
+          <span class="err" id="e-nome">Informe seu nome.</span>
+        </div>
+        <div class="field">
+          <label for="f-esp">Especialidade</label>
+          <input id="f-esp" name="especialidade" type="text" autocomplete="off" placeholder="Ex.: Dermatologia" required minlength="3" list="especialidades" aria-describedby="e-esp">
+          <span class="err" id="e-esp">Informe sua especialidade.</span>
+        </div>
+        <div class="field">
+          <label for="f-cid">Cidade</label>
+          <input id="f-cid" name="cidade" type="text" autocomplete="address-level2" placeholder="Ex.: Recife" required minlength="2" aria-describedby="e-cid">
+          <span class="err" id="e-cid">Informe sua cidade.</span>
+        </div>
+
+        <button class="btn btn-dark" type="submit" data-cta="form">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp
+        </button>
+        <p class="privacy">Seus dados são usados só para este contato.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="pain" aria-labelledby="pain-t">
+    <div class="wrap">
+      <h2 id="pain-t">Você se reconhece?</h2>
+      <div class="grid3">
+        <div class="item">
+          <h3>Agenda que depende de indicação</h3>
+          <p>Mês cheio, mês vazio, e você sem controle de quando chega o próximo paciente.</p>
+        </div>
+        <div class="item">
+          <h3>Já anunciou e não viu retorno</h3>
+          <p>Impulsionou posts ou contratou alguém genérico, e o dinheiro foi embora.</p>
+        </div>
+        <div class="item">
+          <h3>O concorrente aparece primeiro</h3>
+          <p>Você pesquisa sua especialidade na sua cidade e quem surge no topo não é você.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc" aria-labelledby="svc-t">
+    <div class="wrap">
+      <h2 id="svc-t">A UNA cuida de tudo</h2>
+      <p class="intro">Trabalhamos só com medicina. Você foca nos pacientes; nós, em fazer eles chegarem.</p>
+      <div class="grid4">
+        <div class="item">
+          <h3>Campanhas por especialidade</h3>
+          <p>Para os procedimentos e a região que você quer atrair.</p>
+        </div>
+        <div class="item">
+          <h3>Página que converte</h3>
+          <p>Criamos a página do anúncio, rápida e com WhatsApp em destaque.</p>
+        </div>
+        <div class="item">
+          <h3>Verba protegida</h3>
+          <p>Sem pagar por cliques que não viram paciente.</p>
+        </div>
+        <div class="item">
+          <h3>Relatório mensal</h3>
+          <p>Quanto investiu, quantos contatos e quanto custou cada um.</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="#lead-form" data-scroll-form>Quero anunciar no Google</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-t">
+    <div class="wrap">
+      <h2 id="faq-t">Perguntas frequentes</h2>
+      <details>
+        <summary>Quanto preciso investir? <span class="ic" aria-hidden="true">+</span></summary>
+        <p>Depende da especialidade e da cidade. A verba vai direto ao Google, separada da gestão, e indicamos o valor na proposta.</p>
+      </details>
+      <details>
+        <summary>Preciso ter site? <span class="ic" aria-hidden="true">+</span></summary>
+        <p>Não. Criamos a página de destino dos anúncios.</p>
+      </details>
+      <details>
+        <summary>Vocês garantem pacientes? <span class="ic" aria-hidden="true">+</span></summary>
+        <p>Não, e desconfie de quem garante. Trabalhamos com estratégia, métricas transparentes e ajustes constantes.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-t">
+    <div class="wrap">
+      <h2 id="final-t">Hoje alguém vai pesquisar sua especialidade. Garanta que encontre você.</h2>
+      <a class="btn btn-light" href="#" data-wa data-cta="final">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg>Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>UNA · Presença digital para médicos e clínicas</span>
+    <span><a href="https://www.instagram.com/unaagency.co/" target="_blank" rel="noopener">Instagram @unaagency.co</a> · <a href="../politica-de-privacidade.html">Política de privacidade</a></span>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <a class="btn btn-light" href="#" data-wa data-cta="sticky" tabindex="-1">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>Falar no WhatsApp
+  </a>
+</div>
+
+<datalist id="especialidades">
+  <option value="Dermatologia"><option value="Cirurgia Plástica"><option value="Ginecologia e Obstetrícia">
+  <option value="Ortopedia"><option value="Oftalmologia"><option value="Cardiologia"><option value="Urologia">
+  <option value="Endocrinologia"><option value="Psiquiatria"><option value="Pediatria"><option value="Otorrinolaringologia">
+  <option value="Gastroenterologia"><option value="Neurologia"><option value="Odontologia"><option value="Nutrologia">
+</datalist>
+
+<script>
+(function () {
+  var C = window.LP_CONFIG;
+
+  // Guarda UTMs / gclid da primeira visita para atribuição
+  var params = new URLSearchParams(location.search), attrib = {};
+  ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid'].forEach(function (k) {
+    if (params.get(k)) attrib[k] = params.get(k);
+  });
+  try {
+    if (Object.keys(attrib).length) sessionStorage.setItem('lp_attrib', JSON.stringify(attrib));
+    else attrib = JSON.parse(sessionStorage.getItem('lp_attrib') || '{}');
+  } catch (e) {}
+
+  function waUrl(text) {
+    return 'https://wa.me/' + C.whatsappNumber + '?text=' + encodeURIComponent(text);
+  }
+
+  function track(source, data) {
+    var payload = Object.assign({ event: 'generate_lead', lead_source: source }, attrib, data || {});
+    dataLayer.push(payload);
+    if (C.googleAdsId && C.googleAdsConversionLabel) {
+      gtag('event', 'conversion', { send_to: C.googleAdsId + '/' + C.googleAdsConversionLabel });
+    }
+  }
+
+  function openWa(url) {
+    // Abre de forma síncrona ao clique (evita bloqueio de pop-up no iOS)
+    var w = window.open(url, '_blank');
+    if (w) w.opener = null; else location.href = url;
+  }
+
+  // Formulário -> WhatsApp com mensagem pré-preenchida
+  var form = document.getElementById('lead-form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var first = null;
+    form.querySelectorAll('input').forEach(function (inp) {
+      var ok = inp.value.trim().length >= (+inp.getAttribute('minlength') || 1);
+      inp.setAttribute('aria-invalid', ok ? 'false' : 'true');
+      if (!ok && !first) first = inp;
+    });
+    if (first) { first.focus(); return; }
+
+    var nome = form.nome.value.trim(), esp = form.especialidade.value.trim(), cid = form.cidade.value.trim();
+    var msg = 'Olá! Sou ' + nome + ', de ' + esp + ', em ' + cid + '. Quero anunciar no Google.';
+    track('form', { especialidade: esp, cidade: cid });
+    openWa(waUrl(msg));
+  });
+  form.querySelectorAll('input').forEach(function (inp) {
+    inp.addEventListener('input', function () { if (inp.getAttribute('aria-invalid') === 'true') inp.setAttribute('aria-invalid', 'false'); });
+  });
+
+  // Botões diretos de WhatsApp
+  document.querySelectorAll('[data-wa]').forEach(function (a) {
+    a.href = waUrl('Olá! Quero saber mais sobre Google Ads para minha clínica.');
+    a.target = '_blank'; a.rel = 'noopener';
+    a.addEventListener('click', function () { track(a.getAttribute('data-cta')); });
+  });
+
+  // CTA intermediário: rola até o formulário e foca o primeiro campo
+  document.querySelectorAll('[data-scroll-form]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(function () { form.nome.focus({ preventScroll: true }); }, 450);
+    });
+  });
+
+  // CTA fixo no mobile aparece depois que o formulário sai da tela
+  var sticky = document.getElementById('sticky');
+  if ('IntersectionObserver' in window) {
+    var finalSec = document.querySelector('.final');
+    var formVisible = true, finalVisible = false;
+    function update() {
+      var show = !formVisible && !finalVisible;
+      sticky.classList.toggle('show', show);
+      sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
+      sticky.querySelector('a').tabIndex = show ? 0 : -1;
+    }
+    new IntersectionObserver(function (en) { formVisible = en[0].isIntersecting; update(); }).observe(form);
+    new IntersectionObserver(function (en) { finalVisible = en[0].isIntersecting; update(); }).observe(finalSec);
+  }
+})();
+</script>
+</body>
+</html>
